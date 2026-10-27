@@ -1,0 +1,41 @@
+Wheel PWM ready (L298N); wheels disarmed
+I2C scan t=hardware test
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=10.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=9.7 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=9.7 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=10.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=10.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=8.7 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=10.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=8.7 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=8.7 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=9.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=8.7 PIR=0
+TEST WHEEL LEFT forward 200ms duty80
+I2C scan (turret SDA21/SCL22):
+I2C ACK 0x3C
+I2C devices=1 OLED buffer=1 servoPanHz=50 servoTiltHz=50 wheelAHz=5000 wheelBHz=0
+I2C diagnostic uptime=5098 PIRraw=0 PIRwarmup=1 servoAttached=1/1 wheelDuty=80/0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=9.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=9.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=9.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=9.4 PIR=0
+TEST WHEEL RIGHT forward 200ms duty80
+I2C scan (turret SDA21/SCL22):
+I2C ACK 0x3C
+I2C devices=1 OLED buffer=1 servoPanHz=50 servoTiltHz=50 wheelAHz=0 wheelBHz=5000
+I2C diagnostic uptime=7117 PIRraw=0 PIRwarmup=1 servoAttached=1/1 wheelDuty=0/80
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=9.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=9.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=9.4 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=56.7 PIR=0
+I2C scan (turret SDA21/SCL22):
+I2C ACK 0x3C
+I2C devices=1 OLED buffer=1 servoPanHz=50 servoTiltHz=50 wheelAHz=0 wheelBHz=0
+I2C diagnostic uptime=9140 PIRraw=0 PIRwarmup=1 servoAttached=1/1 wheelDuty=0/0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=16.4 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=50.1 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=45.7 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=9.7 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=10.0 PIR=0

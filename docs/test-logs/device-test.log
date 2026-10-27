@@ -1,0 +1,126 @@
+2026-10-26T15:16:42.512615
+Wheel PWM ready (L298N); wheels disarmed
+I2C scan t=hardware test
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+TEST starting: RGB/OLED/buzzer/servos; wheels and laser remain OFF
+I2C scan (turret SDA21/SCL22):
+I2C ACK 0x3C
+I2C devices=1 OLED buffer=1 servoPanPWM=0.0 servoTiltPWM=0.0 wheelAPWM=0.0 wheelBPWM=0.0
+ACK/configuration does not prove visible display or physical movement.
+TEST RGB RED + OLED text
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+TEST RGB GREEN
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+TEST RGB BLUE
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+TEST BUZZER 150ms
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+TEST PAN -> 80 degrees
+link=0 mode=TURRET armed=0 pan=86 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=80 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=80 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=80 tilt=90 cm=-1.0 PIR=0
+TEST PAN -> 100 degrees
+link=0 mode=TURRET armed=0 pan=86 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=93 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=99 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=100 tilt=90 cm=-1.0 PIR=0
+TEST PAN -> 90 degrees
+link=0 mode=TURRET armed=0 pan=94 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+TEST TILT -> 80 degrees
+link=0 mode=TURRET armed=0 pan=90 tilt=84 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=80 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=80 cm=-1.0 PIR=0
+TEST TILT -> 100 degrees
+link=0 mode=TURRET armed=0 pan=90 tilt=81 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=87 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=94 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=100 cm=-1.0 PIR=0
+TEST TILT -> 90 degrees
+link=0 mode=TURRET armed=0 pan=90 tilt=98 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=92 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+TEST sequence complete; wheels disabled, laser off. Confirm visible/light/sound responses.
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+I2C scan (turret SDA21/SCL22):
+I2C ACK 0x3C
+I2C devices=1 OLED buffer=1 servoPanPWM=0.0 servoTiltPWM=0.0 wheelAPWM=9579665316008975105780437731193577205757466451848674951783460762238135678637821338127213898484800293987237806399770056256742749501385702428805849141452253962948778310559576661040175967122101270216704.0 wheelBPWM=0.0
+ACK/configuration does not prove visible display or physical movement.
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+
+Corrected diagnostic report after reflash:
+I2C scan t=hardware test
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+
+Corrected diagnostic report:
+I2C scan t=hardware test
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=57.6 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+I2C scan (turret SDA21/SCL22):
+I2C ACK 0x3C
+I2C devices=1 OLED buffer=1 servoPanHz=50 servoTiltHz=50 wheelAHz=0 wheelBHz=0
+I2C diagnostic uptime=3841 PIRraw=0 PIRwarmup=1 servoAttached=1/1 wheelDuty=0/0
+ACK/configuration does not prove visible display or physical movement.
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=58.4 PIR=0

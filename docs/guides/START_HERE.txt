@@ -1,0 +1,6 @@
+Open Gesture_Sentry_Complete_Guide.html in a browser. It is self-contained and printable.
+Main firmware: turret/turret.ino and turret/WheelDrive.h
+Glove firmware: glove/glove.ino and glove/Mpu6500.h
+Merged firmware images: build/turret and build/glove
+Read the current-status section before hardware use: physical wheel operation is unresolved.
+Historical notes can contain superseded statements.

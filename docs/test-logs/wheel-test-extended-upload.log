@@ -1,0 +1,13 @@
+Extended test source built and host checks passed. Upload failed: wrong boot mode 0xB. Extended pulses NOT run.
+I2C scan (turret SDA21/SCL22):
+I2C ACK 0x3C
+I2C devices=1 OLED buffer=1 servoPanHz=50 servoTiltHz=50 wheelAHz=0 wheelBHz=0
+I2C diagnostic uptime=3781 PIRraw=0 PIRwarmup=1 servoAttached=1/1 wheelDuty=0/0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=46.4 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=50.2 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=50.1 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=50.9 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=37.2 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=34.5 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=36.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=36.0 PIR=0

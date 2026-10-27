@@ -1,0 +1,15 @@
+# Arduino / compiler output
+build/
+*.elf
+*.map
+*.bin
+# Python / Node
+__pycache__/
+node_modules/
+*.pyc
+# Local tooling and scratch
+.remember/
+.claude/
+.scratch_tmp/
+*.exe
+*.tmp

@@ -1,0 +1,24 @@
+Upload successful; flash hash verified. Pulse commands installed; not activated.
+Wheel PWM ready (L298N); wheels disarmed
+I2C scan t=hardware test
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+I2C scan (turret SDA21/SCL22):
+I2C ACK 0x3C
+I2C devices=1 OLED buffer=1 servoPanHz=50 servoTiltHz=50 wheelAHz=0 wheelBHz=0
+I2C diagnostic uptime=3842 PIRraw=0 PIRwarmup=1 servoAttached=1/1 wheelDuty=0/0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0
+link=0 mode=TURRET armed=0 pan=90 tilt=90 cm=-1.0 PIR=0

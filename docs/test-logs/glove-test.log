@@ -1,0 +1,69 @@
+GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 roll=-0.GLOVE sensor=OK seq=248 rol BLE=1 pitch=-0.7 pan=90 tilt=89 BLE=1 pitch=-0.7 pan=90 tilt=89 BLE=1 pitch=-0.7 pan=90 tilt=89 BLE=1 pitch=-0.7 pan=90 tilt=89 BLE=1 pitch=-0.7 pan=90 tilt=89 BLE=1 pitch=-0.7 pan=90 tilt=89 BLE=1 pitch=-0.7 pan=90 tilt=89 BLE=1 pitch=-0.7 pan=90 tilt=89 BLE=1 pitch=-0.7 pan=90 tilt=89 BLE=1 pitch=-0.7 pan=90 tilt=89 BLE=1 pitch=-0.7 pan=90 tilt=89 BLE=1 pitch=-0.7 pan=90 tilt=89 BLE=1 pitch=-0.7 pan=90 tilt=89 BLE=1 pitch=-0.7 pan=90 tilt=89 BLE=ADVERTISING
+MPU6500 detected at 0x68
+Hold glove flat and still for calibration.
+Calibration samples=100 neutralRoll=96.96 neutralPitch=40.82
+Glove BLE address: 20:9b:a9:99:28:5e
+Ready. Send c in Serial Monitor to recalibrate.
+GLOVE sensor=OK seq=1 roll=0.3 pitch=0.0 pan=90 tilt=90 BLE=ADVERTISING
+GLOVE sensor=OK seq=14 roll=1.5 pitch=-1.6 pan=91 tilt=88 BLE=ADVERTISING
+GLOVE sensor=OK seq=27 roll=-1.1 pitch=-1.8 pan=89 tilt=88 BLE=ADVERTISING
+GLOVE sensor=OK seq=40 roll=0.1 pitch=-1.3 pan=90 tilt=89 BLE=ADVERTISING
+GLOVE sensor=OK seq=53 roll=-0.3 pitch=-2.6 pan=90 tilt=87 BLE=ADVERTISING
+GLOVE sensor=OK seq=66 roll=1.9 pitch=-1.8 pan=92 tilt=88 BLE=ADVERTISING
+GLOVE sensor=OK seq=79 roll=1.1 pitch=-1.9 pan=91 tilt=88 BLE=ADVERTISING
+GLOVE sensor=OK seq=92 roll=1.1 pitch=-1.8 pan=91 tilt=88 BLE=ADVERTISING
+GLOVE sensor=OK seq=105 roll=1.2 pitch=-1.7 pan=91 tilt=88 BLE=ADVERTISING
+GLOVE sensor=OK seq=118 roll=1.2 pitch=-1.7 pan=91 tilt=88 BLE=ADVERTISING
+GLOVE sensor=OK seq=131 roll=1.2 pitch=-1.7 pan=91 tilt=88 BLE=ADVERTISING
+GLOVE sensor=OK seq=144 roll=0.2 pitch=-1.9 pan=90 tilt=88 BLE=ADVERTISING
+GLOVE sensor=OK seq=157 roll=0.6 pitch=-1.7 pan=91 tilt=88 BLE=ADVERTISING
+GLOVE sensor=OK seq=170 roll=2.3 pitch=-0.6 pan=92 tilt=89 BLE=ADVERTISING
+GLOVE sensor=OK seq=183 roll=5.5 pitch=-1.3 pan=95 tilt=89 BLE=ADVERTISING
+GLOVE sensor=OK seq=196 roll=3.2 pitch=-0.6 pan=93 tilt=89 BLE=ADVERTISING
+GLOVE sensor=OK seq=209 roll=2.7 pitch=-1.0 pan=93 tilt=89 BLE=ADVERTISING
+GLOVE sensor=OK seq=222 roll=3.0 pitch=-1.3 pan=93 tilt=89 BLE=ADVERTISING
+GLOVE sensor=OK seq=235 roll=3.2 pitch=-1.5 pan=93 tilt=89 BLE=ADVERTISING
+GLOVE sensor=OK seq=248 roll=3.3 pitch=-1.5 pan=93 tilt=89 BLE=ADVERTISING
+GLOVE sensor=OK seq=261 roll=3.2 pitch=-1.5 pan=93 tilt=88 BLE=ADVERTISING
+GLOVE sensor=OK seq=274 roll=3.3 pitch=-1.6 pan=93 tilt=88 BLE=ADVERTISING
+GLOVE sensor=OK seq=287 roll=3.3 pitch=-1.7 pan=93 tilt=88 BLE=ADVERTISING
+GLOVE sensor=OK seq=300 roll=3.3 pitch=-1.5 pan=93 tilt=88 BLE=ADVERTISING
+GLOVE sensor=OK seq=313 roll=3.8 pitch=-1.2 pan=94 tilt=89 BLE=ADVERTISING
+
+Main powered: BLE check
+GLOVE sensor=OK seq=3381 roll=2.6 pitch=0.9 pan=93 tilt=91 BLE=CONNECTED
+MPU6500 detected at 0x68
+Hold glove flat and still for calibration.
+Calibration samples=100 neutralRoll=98.81 neutralPitch=41.62
+Glove BLE address: 20:9b:a9:99:28:5e
+Ready. Send c in Serial Monitor to recalibrate.
+GLOVE sensor=OK seq=1 roll=0.1 pitch=-0.0 pan=90 tilt=90 BLE=ADVERTISING
+GLOVE sensor=OK seq=14 roll=0.6 pitch=-0.0 pan=91 tilt=90 BLE=ADVERTISING
+GLOVE sensor=OK seq=27 roll=0.6 pitch=-0.0 pan=91 tilt=90 BLE=ADVERTISING
+GLOVE sensor=OK seq=40 roll=0.5 pitch=-0.0 pan=90 tilt=90 BLE=ADVERTISING
+GLOVE sensor=OK seq=53 roll=0.6 pitch=-0.0 pan=91 tilt=90 BLE=ADVERTISING
+GLOVE sensor=OK seq=66 roll=0.6 pitch=0.1 pan=91 tilt=90 BLE=ADVERTISING
+GLOVE sensor=OK seq=79 roll=0.4 pitch=0.1 pan=90 tilt=90 BLE=ADVERTISING
+GLOVE sensor=OK seq=92 roll=0.6 pitch=-0.1 pan=91 tilt=90 BLE=ADVERTISING
+GLOVE sensor=OK seq=105 roll=0.4 pitch=-0.1 pan=90 tilt=90 BLE=ADVERTISING
+GLOVE sensor=OK seq=118 roll=0.5 pitch=-0.1 pan=91 tilt=90 BLE=ADVERTISING
+GLOVE sensor=OK seq=131 roll=0.6 pitch=-0.1 pan=91 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=144 roll=0.6 pitch=-0.1 pan=91 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=157 roll=0.5 pitch=-0.0 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=170 roll=0.4 pitch=-0.1 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=183 roll=0.4 pitch=-0.0 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=196 roll=0.5 pitch=-0.0 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=209 roll=0.4 pitch=-0.1 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=222 roll=0.4 pitch=-0.1 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=235 roll=0.4 pitch=-0.1 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=248 roll=0.5 pitch=-0.1 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=261 roll=0.4 pitch=-0.0 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=274 roll=0.4 pitch=-0.1 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=287 roll=0.3 pitch=-0.1 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=300 roll=0.5 pitch=-0.0 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=313 roll=0.4 pitch=-0.1 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=326 roll=0.4 pitch=-0.0 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=339 roll=0.5 pitch=-0.0 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=352 roll=0.4 pitch=-0.1 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=365 roll=0.4 pitch=-0.1 pan=90 tilt=90 BLE=CONNECTED
+GLOVE sensor=OK seq=378 roll=0.4 pitch=-0.2 pan=90 tilt=90 BLE=CONNECTED

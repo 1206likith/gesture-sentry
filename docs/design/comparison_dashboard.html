@@ -1,0 +1,403 @@
+<title>ESA Friend Project — All Options Compared</title>
+<style>
+@font-face {
+  font-family: 'Plex Sans';
+  src: local('IBM Plex Sans');
+}
+:root {
+  --bg: #faf9f7;
+  --bg-raised: #ffffff;
+  --ink: #292524;
+  --ink-soft: #6b6560;
+  --line: #e3ded7;
+  --line-strong: #cfc7bc;
+  --accent: #b5651d;
+  --accent-soft: #f0dcc4;
+  --accent-ink: #7a4413;
+  --good: #4a7c59;
+  --good-bg: #e3ede3;
+  --warn: #b5842a;
+  --warn-bg: #f3e7cd;
+  --bad: #a8432f;
+  --bad-bg: #f2e0da;
+  --mono-bg: #f1ede6;
+  --tag-esa-bg: #e3ddf3; --tag-esa-ink: #5a4a99;
+  --tag-hw-bg: #dbe9e6;  --tag-hw-ink: #2e6b5e;
+  --tag-adv-bg: #f5ddd6; --tag-adv-ink: #a34a34;
+  --tag-spec-bg: var(--accent-soft); --tag-spec-ink: var(--accent-ink);
+  --shadow: 0 1px 2px rgba(41,37,34,0.06), 0 4px 14px rgba(41,37,34,0.05);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1715;
+    --bg-raised: #221e1b;
+    --ink: #ece7e1;
+    --ink-soft: #a89e93;
+    --line: #383029;
+    --line-strong: #4a4038;
+    --accent: #dd9552;
+    --accent-soft: #3a2b1a;
+    --accent-ink: #edc491;
+    --good: #7fb08a;
+    --good-bg: #24312a;
+    --warn: #d8b15c;
+    --warn-bg: #362e1b;
+    --bad: #d98872;
+    --bad-bg: #382420;
+    --mono-bg: #24201c;
+    --tag-esa-bg: #2c2740; --tag-esa-ink: #b3a4e8;
+    --tag-hw-bg: #1f3330;  --tag-hw-ink: #8fd6c4;
+    --tag-adv-bg: #3a2822; --tag-adv-ink: #e8a793;
+    --tag-spec-bg: #3a2b1a; --tag-spec-ink: #edc491;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 18px rgba(0,0,0,0.35);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1a1715; --bg-raised: #221e1b; --ink: #ece7e1; --ink-soft: #a89e93;
+  --line: #383029; --line-strong: #4a4038;
+  --accent: #dd9552; --accent-soft: #3a2b1a; --accent-ink: #edc491;
+  --good: #7fb08a; --good-bg: #24312a;
+  --warn: #d8b15c; --warn-bg: #362e1b;
+  --bad: #d98872; --bad-bg: #382420;
+  --mono-bg: #24201c;
+  --tag-esa-bg: #2c2740; --tag-esa-ink: #b3a4e8;
+  --tag-hw-bg: #1f3330;  --tag-hw-ink: #8fd6c4;
+  --tag-adv-bg: #3a2822; --tag-adv-ink: #e8a793;
+  --tag-spec-bg: #3a2b1a; --tag-spec-ink: #edc491;
+  --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 18px rgba(0,0,0,0.35);
+}
+:root[data-theme="light"] {
+  --bg: #faf9f7; --bg-raised: #ffffff; --ink: #292524; --ink-soft: #6b6560;
+  --line: #e3ded7; --line-strong: #cfc7bc;
+  --accent: #b5651d; --accent-soft: #f0dcc4; --accent-ink: #7a4413;
+  --good: #4a7c59; --good-bg: #e3ede3;
+  --warn: #b5842a; --warn-bg: #f3e7cd;
+  --bad: #a8432f; --bad-bg: #f2e0da;
+  --mono-bg: #f1ede6;
+  --tag-esa-bg: #e3ddf3; --tag-esa-ink: #5a4a99;
+  --tag-hw-bg: #dbe9e6;  --tag-hw-ink: #2e6b5e;
+  --tag-adv-bg: #f5ddd6; --tag-adv-ink: #a34a34;
+  --tag-spec-bg: var(--accent-soft); --tag-spec-ink: var(--accent-ink);
+  --shadow: 0 1px 2px rgba(41,37,34,0.06), 0 4px 14px rgba(41,37,34,0.05);
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0; background: var(--bg); color: var(--ink);
+  font-family: 'Plex Sans', 'IBM Plex Sans', system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+body { padding: 0 0 5rem; }
+
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 1.5rem; }
+
+header.top {
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid var(--line);
+}
+.eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem; letter-spacing: 0.11em; text-transform: uppercase;
+  color: var(--accent); font-weight: 600; margin: 0 0 0.6rem;
+}
+h1 {
+  font-size: clamp(1.7rem, 3.2vw, 2.5rem);
+  line-height: 1.12; margin: 0 0 0.7rem; font-weight: 700;
+  text-wrap: balance; letter-spacing: -0.01em;
+}
+.sub {
+  font-size: 1.02rem; color: var(--ink-soft); max-width: 62ch; line-height: 1.55; margin: 0;
+}
+
+/* ---- source legend ---- */
+.legend {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.9rem;
+  margin: 2rem 0 0;
+}
+.legend .card {
+  background: var(--bg-raised); border: 1px solid var(--line); border-radius: 10px;
+  padding: 1rem 1.1rem; box-shadow: var(--shadow);
+}
+.legend .tag {
+  display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem;
+  font-weight: 600; letter-spacing: 0.04em; padding: 0.18rem 0.5rem; border-radius: 5px;
+  margin-bottom: 0.55rem;
+}
+.tag-esa { background: var(--tag-esa-bg); color: var(--tag-esa-ink); }
+.tag-hw  { background: var(--tag-hw-bg);  color: var(--tag-hw-ink); }
+.tag-adv { background: var(--tag-adv-bg); color: var(--tag-adv-ink); }
+.tag-spec{ background: var(--tag-spec-bg);color: var(--tag-spec-ink); }
+.legend .card h3 { margin: 0 0 0.3rem; font-size: 0.94rem; }
+.legend .card p { margin: 0; font-size: 0.82rem; color: var(--ink-soft); line-height: 1.4; }
+.legend .card .n { font-family: 'IBM Plex Mono', monospace; color: var(--ink-soft); font-size: 0.78rem; }
+
+/* ---- section ---- */
+section { margin-top: 3rem; }
+h2 {
+  font-size: 1.15rem; margin: 0 0 0.3rem; font-weight: 700;
+}
+.section-note { color: var(--ink-soft); font-size: 0.88rem; margin: 0 0 1.1rem; max-width: 68ch; }
+
+/* ---- controls ---- */
+.controls {
+  display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;
+  margin-bottom: 1rem;
+}
+.controls .label { font-size: 0.78rem; color: var(--ink-soft); margin-right: 0.3rem; }
+.chip {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.74rem; font-weight: 600;
+  padding: 0.32rem 0.7rem; border-radius: 999px; border: 1px solid var(--line-strong);
+  background: var(--bg-raised); color: var(--ink-soft); cursor: pointer;
+  transition: all 0.12s ease;
+}
+.chip:hover { border-color: var(--accent); color: var(--ink); }
+.chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ---- table ---- */
+.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow); }
+table { width: 100%; border-collapse: collapse; background: var(--bg-raised); font-size: 0.86rem; min-width: 880px; }
+thead th {
+  text-align: left; font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft);
+  font-weight: 600; padding: 0.65rem 0.8rem; border-bottom: 1px solid var(--line-strong);
+  position: sticky; top: 0; background: var(--bg-raised);
+}
+tbody td { padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:hover { background: var(--mono-bg); }
+tbody tr[hidden] { display: none; }
+.name { font-weight: 600; }
+.pill {
+  display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem;
+  font-weight: 600; padding: 0.14rem 0.5rem; border-radius: 5px; white-space: nowrap;
+}
+.pill-esa { background: var(--tag-esa-bg); color: var(--tag-esa-ink); }
+.pill-hw  { background: var(--tag-hw-bg);  color: var(--tag-hw-ink); }
+.pill-adv { background: var(--tag-adv-bg); color: var(--tag-adv-ink); }
+.diff-low    { color: var(--good); font-weight: 600; }
+.diff-mod    { color: var(--warn); font-weight: 600; }
+.diff-high   { color: var(--bad); font-weight: 600; }
+.note { color: var(--ink-soft); font-size: 0.82rem; }
+.cost { font-family: 'IBM Plex Mono', monospace; font-size: 0.82rem; white-space: nowrap; }
+
+/* ---- spec cards ---- */
+.specs { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; }
+@media (max-width: 780px) { .specs { grid-template-columns: 1fr; } .legend { grid-template-columns: 1fr 1fr; } }
+.spec-card {
+  background: var(--bg-raised); border: 1px solid var(--line); border-radius: 12px;
+  padding: 1.4rem 1.5rem; box-shadow: var(--shadow); position: relative;
+}
+.spec-card.chosen { border-color: var(--accent); }
+.spec-card .status {
+  position: absolute; top: 1.4rem; right: 1.5rem;
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.05em; text-transform: uppercase;
+}
+.spec-card.chosen .status { color: var(--accent); }
+.spec-card.superseded .status { color: var(--ink-soft); }
+.spec-card h3 { margin: 0 0 0.15rem; font-size: 1.15rem; }
+.spec-card .meta { font-size: 0.8rem; color: var(--ink-soft); margin-bottom: 0.9rem; }
+.spec-kv { display: grid; grid-template-columns: auto 1fr; gap: 0.3rem 0.9rem; font-size: 0.85rem; }
+.spec-kv dt { color: var(--ink-soft); font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; padding-top: 0.15rem; }
+.spec-kv dd { margin: 0; padding-top: 0.1rem; }
+
+/* ---- verdict ---- */
+.verdict {
+  margin-top: 3rem; padding: 1.6rem 1.7rem; border-radius: 12px;
+  background: var(--accent-soft); border: 1px solid var(--accent);
+}
+.verdict h2 { margin-bottom: 0.6rem; }
+.verdict p { margin: 0 0 0.6rem; line-height: 1.6; font-size: 0.94rem; }
+.verdict p:last-child { margin-bottom: 0; }
+.verdict strong { color: var(--accent-ink); }
+
+footer.meta {
+  margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line);
+  font-size: 0.78rem; color: var(--ink-soft); font-family: 'IBM Plex Mono', monospace;
+}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <p class="eyebrow">ESA_Friend_Project · decision reference</p>
+    <h1>Every project option, side by side</h1>
+    <p class="sub">Four idea sets were generated across this thread for slightly different goals. This page puts all 62 ideas in one sortable table, plus the two options that have a full build spec written. Use the filters to narrow by source or by budget/timeline.</p>
+  </header>
+
+  <div class="legend">
+    <div class="card">
+      <span class="tag tag-esa">SET 1 · 21 ideas</span>
+      <h3>Course-paper style</h3>
+      <p>BACSE324-scoped, needs a paper/patent angle. Mostly 1–3 person scope. <span class="n">Project_Ideas_Brainstorm.md</span></p>
+    </div>
+    <div class="card">
+      <span class="tag tag-hw">SET 2 · 20 ideas</span>
+      <h3>Simple hardware demo</h3>
+      <p>No paper needed. 50/50 hw/sw, built for a clean 4-way split, few weeks. <span class="n">Hardware_Demo_Project_Ideas.md</span></p>
+    </div>
+    <div class="card">
+      <span class="tag tag-adv">SET 3 · 20 ideas</span>
+      <h3>Advanced robotics</h3>
+      <p>More technical depth &amp; demo wow-factor than Set 2's baseline. <span class="n">Advanced_Robotics_Project_Ideas.md</span></p>
+    </div>
+    <div class="card">
+      <span class="tag tag-spec">2 full specs</span>
+      <h3>Built out in full</h3>
+      <p>BOM, 4-way split, control logic, week-by-week timeline already written.</p>
+    </div>
+  </div>
+
+  <section id="full-specs">
+    <h2>Fully-specced options</h2>
+    <p class="section-note">Only these two have a complete build document — BOM with costs, exact 4-person role split, control logic, and a week-by-week timeline.</p>
+    <div class="specs">
+      <div class="spec-card superseded">
+        <span class="status">Superseded</span>
+        <h3>Voice-Controlled Robotic Arm</h3>
+        <div class="meta">Set 2, idea #15 — basic pick-and-place</div>
+        <dl class="spec-kv">
+          <dt>Cost</dt><dd class="cost">~₹4,000–4,500</dd>
+          <dt>Timeline</dt><dd>3 weeks + 1 buffer</dd>
+          <dt>Split</dt><dd>Mechanical build / servo firmware / app+voice / integration</dd>
+          <dt>Note</dt><dd class="note">Replaced by the sumo robot as the working choice; kept here as reference. A vision-guided upgrade of this idea exists in Set 3 (#4).</dd>
+        </dl>
+      </div>
+      <div class="spec-card chosen">
+        <span class="status">Current pick</span>
+        <h3>Autonomous Sumo-Fighting Robot</h3>
+        <div class="meta">Replaces the arm — chosen working project</div>
+        <dl class="spec-kv">
+          <dt>Cost</dt><dd class="cost">~₹3,500–4,000</dd>
+          <dt>Timeline</dt><dd>3–4 weeks realistic, up to 5–6 if tuning drags</dd>
+          <dt>Split</dt><dd>Chassis/drivetrain / sensor mounting / control firmware / integration+tuning</dd>
+          <dt>Difficulty</dt><dd>Moderate overall — mechanical grip/weight and IR-edge calibration are the real time sinks, not the code</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="all-projects">
+    <h2>All 62 ideas</h2>
+    <p class="section-note">Filter by source set, then scan cost and difficulty. "Best for" is copied from each idea's own writeup — it's the one-line reason to pick it.</p>
+
+    <div class="controls">
+      <span class="label">Source</span>
+      <button class="chip active" data-filter="all">All (62)</button>
+      <button class="chip" data-filter="esa">Course-paper (21)</button>
+      <button class="chip" data-filter="hw">Simple hw-demo (20)</button>
+      <button class="chip" data-filter="adv">Advanced robotics (20)</button>
+    </div>
+
+    <div class="table-scroll">
+      <table id="ideas-table">
+        <thead>
+          <tr>
+            <th>Set</th>
+            <th>Idea</th>
+            <th>Domain / what it demos</th>
+            <th>Cost or Δ vs. baseline</th>
+            <th>Difficulty</th>
+            <th>Best for</th>
+          </tr>
+        </thead>
+        <tbody>
+<!-- SET 1: course-paper style -->
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">SPI eavesdrop / injection</td><td>Robotics / drone sensors</td><td class="cost">~₹0</td><td class="diff-mod">Moderate</td><td class="note">Sensor-fusion story</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">UART command injection</td><td>Industrial actuators</td><td class="cost">~₹0</td><td class="diff-low">Low–mod</td><td class="note">Fast, simple build</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">Modbus RTU injection</td><td>Industrial / PLC</td><td class="cost">~₹200</td><td class="diff-mod">Moderate</td><td class="note">Strong "PLC" framing</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">I2C address-spoofing</td><td>Consumer multi-sensor</td><td class="cost">~₹0</td><td class="diff-mod">Moderate</td><td class="note">Differentiates from existing I2C project</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">SPI flash glitching</td><td>Hardware / secure boot</td><td class="cost">~₹150</td><td class="diff-high">High</td><td class="note">Wow-factor, riskier</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">Priority inversion</td><td>Pure RTOS</td><td class="cost">₹0</td><td class="diff-low">Low</td><td class="note">Cheapest + fastest, textbook-safe</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">GPIO interrupt storm</td><td>Generic embedded</td><td class="cost">~₹0</td><td class="diff-low">Low</td><td class="note">Easiest live demo</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">Timer / tick manipulation</td><td>Safety-critical timing</td><td class="cost">~₹0</td><td class="diff-mod">Moderate</td><td class="note">Nuanced RTOS-internals angle</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">Watchdog bypass / abuse</td><td>Safety systems</td><td class="cost">₹0</td><td class="diff-mod">Moderate</td><td class="note">Under-explored, examiner-friendly</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">Stack-overflow corruption</td><td>Firmware reliability</td><td class="cost">₹0</td><td class="diff-mod">Moderate</td><td class="note">Strong "found a real bug" narrative</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">ADC glitching via rail noise</td><td>Automotive / industrial sensors</td><td class="cost">~₹150</td><td class="diff-mod">Moderate</td><td class="note">Hands-on hardware feel</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">Sleep/wake timing attack</td><td>Battery IoT / wearables</td><td class="cost">~₹100</td><td class="diff-mod">Moderate</td><td class="note">Attacks energy budget, not CPU time</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">Brown-out induced reset</td><td>Safety-critical ECUs</td><td class="cost">~₹100</td><td class="diff-mod">Moderate</td><td class="note">Real automotive failure class</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">NTP poisoning</td><td>Distributed sensor nets</td><td class="cost">₹0</td><td class="diff-mod">Moderate</td><td class="note">Multi-node distributed-systems story</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">MQTT broker flooding</td><td>Cloud IoT</td><td class="cost">₹0</td><td class="diff-low">Low–mod</td><td class="note">Real-product framing, portfolio value</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">DNS spoofing</td><td>IoT / OTA security</td><td class="cost">₹0</td><td class="diff-mod">Moderate</td><td class="note">Timely, maps to real CVEs</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">Multi-core task migration jitter</td><td>General computing</td><td class="cost">₹0</td><td class="diff-low">Low</td><td class="note">Fastest / cheapest overall</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">Cache / flash WCET variance</td><td>RT systems theory</td><td class="cost">₹0</td><td class="diff-low">Low–mod</td><td class="note">Safest, most "textbook"</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">GPS/GNSS spoofing</td><td>Automotive / drone nav</td><td class="cost">~₹500</td><td class="diff-high">High</td><td class="note">Highest wow-factor, check parts first</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">Bluetooth Classic SPP flood</td><td>Legacy industrial serial</td><td class="cost">₹0</td><td class="diff-low">Low</td><td class="note">Weakest pick, well-trodden</td></tr>
+<tr data-set="esa"><td><span class="pill pill-esa">Set 1</span></td><td class="name">CAN-FD bit-rate-switch</td><td>Next-gen automotive</td><td class="cost">~₹300+</td><td class="diff-high">High</td><td class="note">Most novel, riskiest on hardware sourcing</td></tr>
+<!-- SET 2: simple hw demo -->
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Smart parking indicator</td><td>Ultrasonic/IR ×4–6, LED matrix</td><td class="cost">2–3 wks</td><td class="diff-low">Low</td><td class="note">Fast, cheap, very demoable</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Gas leak + auto-vent</td><td>MQ gas sensor, relay, fan, buzzer</td><td class="cost">2–3 wks</td><td class="diff-low">Low</td><td class="note">Strong safety story</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Smart irrigation</td><td>Soil sensors, relay, pump</td><td class="cost">2–3 wks</td><td class="diff-low">Low</td><td class="note">Classic, cheap, reliable parts</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">RFID attendance / lock</td><td>RFID reader, servo lock</td><td class="cost">2–3 wks</td><td class="diff-mod">Moderate</td><td class="note">Clean 4-way split</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Home automation (app + voice)</td><td>Relay bank</td><td class="cost">2 wks</td><td class="diff-low">Low</td><td class="note">Fastest software-heavy option</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Line-follow / obstacle robot</td><td>Chassis, motors, IR/ultrasonic</td><td class="cost">3–4 wks</td><td class="diff-mod">Moderate</td><td class="note">Best "robot" wow-factor at this tier</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Smart dustbin</td><td>Servo lid, ultrasonic ×1–2</td><td class="cost">2 wks</td><td class="diff-low">Low</td><td class="note">Very simple, cheap</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Weather station</td><td>Temp/humidity/pressure/rain/light</td><td class="cost">2–3 wks</td><td class="diff-low">Low</td><td class="note">Software / dashboard-heavy</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Energy meter</td><td>Current / voltage sensor</td><td class="cost">3 wks</td><td class="diff-mod">Moderate</td><td class="note">Practical, needs electrical care</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Dual-factor door lock</td><td>Fingerprint + RFID + servo</td><td class="cost">3–4 wks</td><td class="diff-mod">Moderate</td><td class="note">Most "security system" feel</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Watering + grow-light</td><td>Moisture + LDR + 2 relays</td><td class="cost">3 wks</td><td class="diff-mod">Moderate</td><td class="note">More subsystems to split</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Mini smart traffic light</td><td>LEDs ×4, ultrasonic ×4</td><td class="cost">3 wks</td><td class="diff-mod">Moderate</td><td class="note">Best visual demo at this tier</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Fall-detection wearable</td><td>MPU6050 wearable</td><td class="cost">2–3 wks</td><td class="diff-low">Low–mod</td><td class="note">Medical-IoT framing</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Adaptive street-light model</td><td>LDR + PIR, LEDs</td><td class="cost">2 wks</td><td class="diff-low">Low</td><td class="note">Simplest firmware, more mounting work</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Voice / app robotic arm <em>(superseded)</em></td><td>3–4 servo arm</td><td class="cost">3–4 wks</td><td class="diff-mod">Moderate</td><td class="note">Good hardware build challenge — full spec exists, now replaced by sumo</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Smart scarecrow</td><td>PIR/ultrasonic, buzzer, servo</td><td class="cost">2 wks</td><td class="diff-low">Low</td><td class="note">Fun, easy indoor demo</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Health vitals monitor</td><td>Pulse + temp sensor wearable</td><td class="cost">2–3 wks</td><td class="diff-low">Low–mod</td><td class="note">Clean 3-way split</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Smart bike safety system</td><td>Buttons, LEDs, accelerometer, ultrasonic</td><td class="cost">3 wks</td><td class="diff-mod">Moderate</td><td class="note">Good mechanical-mounting work</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Automated pet feeder</td><td>Servo/auger dispenser, load cell/IR</td><td class="cost">3 wks</td><td class="diff-mod">Moderate</td><td class="note">Popular, well-documented</td></tr>
+<tr data-set="hw"><td><span class="pill pill-hw">Set 2</span></td><td class="name">Smart mailbox notifier</td><td>Reed switch/IR, optional weight sensor</td><td class="cost">1–2 wks</td><td class="diff-low">Low</td><td class="note">Fastest / simplest overall</td></tr>
+<!-- SET 3: advanced robotics -->
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">Self-balancing robot</td><td>MPU6050 + PID, inverted pendulum</td><td class="cost">+1 wk</td><td class="diff-mod">Moderate</td><td class="note">Real control-systems learning (PID)</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">3-bot swarm coordination</td><td>ESP-NOW/BLE formation-following</td><td class="cost">+2–3 wks</td><td class="diff-high">High</td><td class="note">Most "research-y," most impressive to judges</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">Maze-solving + mapping</td><td>Flood-fill / wall-following + live map</td><td class="cost">+1 wk</td><td class="diff-mod">Moderate</td><td class="note">Algorithm-heavy, less mechanical risk</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">Vision-guided robotic arm</td><td>Color-blob detection + inverse kinematics</td><td class="cost">+2 wks</td><td class="diff-high">High</td><td class="note">Computer vision + real IK math</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">Line-follow delivery bot</td><td>RFID station stops + payload drop</td><td class="cost">+0–1 wk</td><td class="diff-mod">Moderate</td><td class="note">"Real product" framing, moderate risk</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">Gesture-controlled robot</td><td>IMU glove over BLE → motion</td><td class="cost">+0–1 wk</td><td class="diff-low">Low–mod</td><td class="note">Best effort-to-wow ratio on this list</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">Fire-fighting robot</td><td>Flame sensor array + pump/spray</td><td class="cost">+1 wk</td><td class="diff-mod">Moderate</td><td class="note">Popular competition format, satisfying demo</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">Sorting conveyor</td><td>Color/size sensor + diverter servo</td><td class="cost">+1 wk</td><td class="diff-mod">Moderate</td><td class="note">"Mini factory," different from driving robots</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">Assistive mobility model</td><td>Joystick + voice + safety-override</td><td class="cost">+2 wks</td><td class="diff-high">High</td><td class="note">Strongest social-good story</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">GPS waypoint rover</td><td>GPS + compass, real navigation math</td><td class="cost">+2 wks</td><td class="diff-high">High</td><td class="note">Real nav math, needs outdoor space</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">Combat arm hybrid</td><td>Sumo ring-awareness + gripper eject</td><td class="cost">+1 wk</td><td class="diff-mod">Moderate</td><td class="note">Combines sumo + arm ideas cleverly</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">Self-parking robot</td><td>Ultrasonic gap-mapping + reverse maneuver</td><td class="cost">+1 wk</td><td class="diff-mod">Moderate</td><td class="note">Very relatable "real car tech" demo</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">Sentry turret tracker</td><td>Pan-tilt + ultrasonic/PIR tracking</td><td class="cost">+0 wk</td><td class="diff-low">Low–mod</td><td class="note">Fastest build, no chassis/motors needed</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">2-robot capture-the-flag</td><td>Wireless position broadcast + strategy</td><td class="cost">+2 wks</td><td class="diff-high">High</td><td class="note">Multi-agent systems, most "alive" demo</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">Dual-arm handoff</td><td>Two arms pass an object in sequence</td><td class="cost">+2–3 wks</td><td class="diff-high">High</td><td class="note">Industrial-automation storytelling</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">Stair-climbing robot</td><td>Tracked chassis, offset/rocker suspension</td><td class="cost">+2–3 wks</td><td class="diff-high">High</td><td class="note">Team has mechanical/CAD strength</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">Assistive guide-cane</td><td>Ultrasonic + vibration feedback</td><td class="cost">+0 wk</td><td class="diff-mod">Moderate</td><td class="note">Lowest mechanical risk, high social impact</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">Robot soccer player</td><td>Color-based ball tracking + goal-scoring</td><td class="cost">+2 wks</td><td class="diff-high">High</td><td class="note">Vision + sports framing, popular format</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">Modular snap-together kit</td><td>Quick-swap chassis modules</td><td class="cost">+1 wk</td><td class="diff-mod">Moderate</td><td class="note">Engineering-design showcase over one trick</td></tr>
+<tr data-set="adv"><td><span class="pill pill-adv">Set 3</span></td><td class="name">QR-code AGV</td><td>Grid nav + QR junction reads</td><td class="cost">+1 wk</td><td class="diff-mod">Moderate</td><td class="note">"Real Amazon warehouse" framing</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="verdict">
+    <h2>Where this leaves you</h2>
+    <p><strong>If your friend wants "better than sumo" but still low-risk:</strong> Self-balancing robot, gesture-controlled robot, or sentry turret tracker (Set 3, #1/#6/#13) — each is a genuine step up in technical depth and demo appeal without leaving the "few weeks, moderate difficulty" zone the sumo bot occupies.</p>
+    <p><strong>If the team wants to swing for the most impressive thing on this entire page:</strong> 3-bot swarm coordination or 2-robot capture-the-flag (Set 3, #2/#14) — genuinely stand out because almost no student team attempts multi-agent coordination, but budget real extra weeks and expect more integration pain across multiple robots.</p>
+    <p><strong>If the goal shifts back to course marks (paper/patent) instead of a standalone demo:</strong> Set 1's priority-inversion or GPIO-interrupt-storm ideas need zero extra hardware and map directly onto Module 4 (RTOS) of the syllabus.</p>
+  </div>
+
+  <footer class="meta">62 ideas across 4 documents · docs/Project_Ideas_Brainstorm.md · Hardware_Demo_Project_Ideas.md · Advanced_Robotics_Project_Ideas.md · Robotic_Arm_Full_Spec.md · Sumo_Robot_Full_Spec.md</footer>
+</div>
+
+<script>
+(function() {
+  var chips = document.querySelectorAll('.chip');
+  var rows = document.querySelectorAll('#ideas-table tbody tr');
+  chips.forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      chips.forEach(function(c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      var filter = chip.getAttribute('data-filter');
+      rows.forEach(function(row) {
+        if (filter === 'all' || row.getAttribute('data-set') === filter) {
+          row.removeAttribute('hidden');
+        } else {
+          row.setAttribute('hidden', '');
+        }
+      });
+    });
+  });
+})();
+</script>
